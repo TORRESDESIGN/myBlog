@@ -31,6 +31,7 @@
   --primary-blue: #01579b;
   --primary-teal: #00BCD4;
   --secondary-purple: #AA00FF;
+  --blog-font: #006064;
   --bg-light-blue: #E0F7FA;
 }
 
@@ -44,14 +45,13 @@ body {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: var(--bg-light-blue);
   font-size: 18px;
 }
 
 /* || typography -links  */
 
 .blog-title {
-  color: rgba(0, 96, 100, 1);
+  color: var(--blog-font);
   font-family: Roboto;
   font-style: Bold;
   font-size: 5.625em;
@@ -59,6 +59,14 @@ body {
   line-height: 105px;
   letter-spacing: 0%;
   text-align: left;
+  padding: 45px 0 50px 0;
+}
+.tag {
+	color: var(--blog-font);
+	background-color: var(--bg-light-blue);
+	width: 86.1px;
+	height: 31px;
+	text-decoration: none;
 }
 p {
   opacity: 0.87;
