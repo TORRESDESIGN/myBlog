@@ -67,10 +67,21 @@ body {
 	width: 86.1px;
 	height: 31px;
 	text-decoration: none;
+  margin-right: 5.38px;
+  padding: 5px 10px;
 }
 p {
   opacity: 0.87;
   letter-spacing: 0.5px;
+}
+
+.year {
+  margin-top: 50px;
+  color: var(--secondary-purple);
+  font-size: 17px;
+}
+hr {
+  color: var(--secondary-purple);
 }
 
 h1 {
