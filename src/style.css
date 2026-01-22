@@ -69,6 +69,10 @@ body {
   margin-right: 5.38px;
   padding: 5px 10px;
 }
+
+.tag:hover {
+  box-shadow: 0 0 0 2px var(--blog-font); /* Simulates border without shifting */
+}
 p {
   opacity: 0.87;
   letter-spacing: 0.5px;
@@ -81,14 +85,7 @@ p {
 }
 
 /*Articles/blog container*/
-/*
-section {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 33px;
-  justify-content: center;
-}
-*/
+
 section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -124,6 +121,14 @@ hr {
   text-align: left;
   margin-top: 14px;
   margin-left: 14px;
+}
+
+.blog-btn {
+  padding: 10px 0;
+  margin-right: 15px;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 a {
   text-decoration: none;
@@ -190,6 +195,11 @@ nav #logo {
   grid-column: 1;
 }
 
+.right-menu {
+  margin-right: 15px;
+  grid-column: 3;
+  align-self: center;
+}
 main {
   margin: 0px auto;
   width: 95%;
