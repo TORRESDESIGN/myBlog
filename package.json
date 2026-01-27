@@ -1,0 +1,28 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "A blog made with 11ty for my personal website.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TORRESDESIGN/myBlog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TORRESDESIGN/myBlog/issues"
+  },
+  "homepage": "https://github.com/TORRESDESIGN/myBlog#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
