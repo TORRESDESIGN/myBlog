@@ -1,5 +1,22 @@
 # My Blog notes
-
+## after coding static HTML layout
+1. create .eleveny.js config file in root following steps in docs(addPassthroughCopy, setInputDirectory)
+2. create n\_includes folder in src folder
+3. add base.njk file in that folder with html template
+4. add {{ title }} in title tags, and add {{ content | safe }} in body tags
+ {{title}} => variable from front matter meta data, {{content | safe }} renders content after front matter '---'
+5. modify root index.html file => index.njk, delete all accept inner body contents, delete body tags
+  ex:<header></header><main></main> 
+  add front matter at very top as so for sanity check/test build(no quotes):
+  '---
+    title: test!
+    layout: 'base.njk'
+    ---'
+6. re-add link tag stylesheet to base.njk
+7. create header component by cutting it from index.njk
+  create file in n\_includes folder > header.njk
+  past header data in that
+  
 
 ---
 # H1
