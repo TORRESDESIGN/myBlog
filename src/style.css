@@ -251,7 +251,8 @@ footer {
   max-width: 1200px;
 }
 .footer-main p {
-  margin: 15px 0 15px 15px;
+  padding: 15px 0 15px 15px;
+  text-align: center;
 }
 
 #footer-end {
