@@ -1,7 +1,7 @@
 ---
 title: My first blog post
 author: Daniel Torres
-date: 2/12/26
+date: 2026-02-12
 tags: post
 ---
 

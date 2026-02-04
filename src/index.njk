@@ -16,7 +16,11 @@ layout: 'base.njk'
 			<hr />
 		</div>
 		<section>
-			
+			{%- for post in collections.post -%}
+				<article class="article-top-margin">
+					<h1 class="blog-post-title">{{ post.data.title }}</h1>
+				</article>
+			{%- endfor -%}
 		</section>
 	</main>
 
