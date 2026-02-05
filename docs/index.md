@@ -16,7 +16,19 @@
 7. create header component by cutting it from index.njk
   create file in n\_includes folder > header.njk
   past header data in that
-  
+## Looping through all my blog post
+8. create a blog folder that holds all my markdown blog post files, such as '2026-2-12-blog-post.md':
+```
+---
+title: My first blog post
+author: Daniel Torres
+date: 2026-02-12
+tags: post
+---
+
+lorum impsum text..
+```
+9.
 
 ---
 # H1

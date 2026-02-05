@@ -18,7 +18,11 @@ layout: 'base.njk'
 		<section>
 			{%- for post in collections.post -%}
 				<article class="article-top-margin">
-					<h1 class="blog-post-title">{{ post.data.title }}</h1>
+					<figure>
+						<img src="{{ post.data.image}}" alt="{{ post.data.imageAlt }}" class="blog-image">
+						<figcaption>{{ post.data.date }} - 2 minute read</figcaption>
+						<h1 class="blog-post-title">{{ post.data.title }}</h1>
+					</figure>
 				</article>
 			{%- endfor -%}
 		</section>
