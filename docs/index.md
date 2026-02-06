@@ -28,7 +28,49 @@ tags: post
 
 lorum impsum text..
 ```
-9.
+9. The index page where all muy post will show, convert index.html => index.njk
+Add front matter vars needed such as title, and add base layout, and loop functions {%- for post in collections.post -%}
+for loops (tags: post) in collections.post (post tags are a collection)
+img and title tags etc that's in each post can be looped by ex: {{ post.data.image}}
+post is the tag name, data is the data you are getting, name of what you are trying to grab, such as title, author, date, etc
+```
+---
+title: My blog title
+layout: 'base.njk'
+---
+
+  <main>
+    <h1 class="blog-title">Blog</h1> etc..
+
+    <section>
+      {%- for post in collections.post | reverse -%}
+        <article class="article-top-margin">
+          <figure>
+            <img src="{{ post.data.image}}" alt="{{ post.data.imageAlt }}" class="blog-image">
+            <figcaption>{{ post.data.date }} - 2 minute read</figcaption>
+            <h1 class="blog-post-title">{{ post.data.title }}</h1>
+          </figure>
+        </article>
+      {%- endfor -%}
+    </section>
+  </main>
+```
+### fix date in post to only show what you typed instead of time and zone etc.
+In the .eleventy.js config file add code on top and code in module:
+```
+const { DateTime } = require("luxon");
+
+module.exports = function(eleventyConfig) {
+  etc ...
+  //This is a filter method, need to add postDate filter in html/njk ex: {{ post.data.date | postDate }}
+    eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+    });
+}
+```
+In the n\_includes folder, create article.njk
+Copy post.njk contents in there or just move to the folder with new name
+
 
 ---
 # H1
