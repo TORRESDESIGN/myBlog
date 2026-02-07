@@ -107,7 +107,7 @@ section {
 }
 
 
-figure:hover {
+a figure:hover {
   box-shadow: 0 0 0 2px var(--secondary-purple); /* Simulates border without shifting */
 }
 

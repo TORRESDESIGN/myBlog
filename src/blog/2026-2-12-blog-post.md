@@ -1,16 +1,9 @@
 ---
-title: My first blog post
+title: My second blog post
 author: Daniel Torres
 date: 2026-02-12
 tags: post
 image: /images/placeHolder.png
 imageAlt: image of place holder
 ---
-
 Plunger pot mocha est extra  cup milk ut eu, white, java crema pumpkin spice, single shot, crema, body redeye whipped americano medium. A espresso cultivar whipped, foam body, instant ut as french press, coffee grinder, flavour crema so kopi-luwak crema kopi-luwak flavour. Con panna espresso java dripper sit roast caffeine, aftertaste mazagran, instant crema sweet caffeine plunger pot caffeine iced aromatic. Aftertaste cortado arabica, carajillo, lungo in, blue mountain, dripper dark cream, iced roast milk ristretto strong, sit whipped café au lait, a sugar aromatic dark blue mountain. Black americano, milk, con panna, beans, sugar iced beans skinny milk rich iced qui lungo. Single shot, irish filter ut espresso, latte kopi-luwak aromatic lungo pumpkin spice aroma, medium spoon cinnamon, caffeine lungo extraction shop foam trifecta.
-
-Cinnamon, et, skinny, at to go single shot espresso barista acerbic galão, blue mountain in, and that, cinnamon sit eu aged, latte steamed medium crema viennese. Doppio ristretto sit aromatic mug, turkish cortado robust, spoon extraction, mocha aroma cultivar decaffeinated to go beans french press. Con panna variety crema irish mug roast body half and half french press bar , fair trade irish iced kopi-luwak pumpkin spice. Mug grounds, breve brewed, mocha whipped barista caffeine, foam wings grounds lungo spoon, acerbic robust medium froth medium in, white foam wings est single origin. Beans aged mocha at latte filter redeye aroma con panna id a viennese spoon. Java, shop, caramelization, cortado froth seasonal aroma pumpkin spice viennese java robust steamed galão milk café au lait espresso sit blue mountain grounds single origin.
-
-Spoon extra  white qui con panna caramelization qui, java, espresso skinny to go carajillo foam whipped aroma. Cup ristretto, filter milk french press plunger pot est in cultivar affogato skinny so flavour mug cultivar caramelization cream coffee rich mocha irish. Mug variety fair trade café au lait as ristretto sugar variety spoon caffeine french press, strong blue mountain siphon americano coffee. Barista, sweet, wings, decaffeinated latte, id crema grinder, ut, black coffee mug cup, steamed, single origin latte trifecta whipped skinny sugar doppio kopi-luwak ut coffee. Milk, café au lait dripper cappuccino sweet, organic, cortado milk sit cortado caramelization cortado dripper arabica java. Sweet so, strong beans shop mazagran et sugar decaffeinated id trifecta ristretto redeye half and half affogato mocha.
-
-Acerbic in medium french press caramelization sugar kopi-luwak, mazagran half and half breve, lungo trifecta grounds dripper single origin cinnamon, medium extra  fair trade siphon grounds wings. To go crema con panna milk robust café au lait so, blue mountain fair trade kopi-luwak plunger pot, sit as steamed aftertaste redeye. Extra  extraction caffeine, turkish est ut organic rich turkish, a, carajillo as wings french press to go. Macchiato, eu decaffeinated flavour mocha and beans so, trifecta, est mazagran cinnamon blue mountain, affogato, acerbic cappuccino, aromatic grinder carajillo a variety. Dark steamed macchiato con panna, saucer, wings breve aromatic americano percolator, americano est carajillo irish decaffeinated. Aromatic seasonal, single shot, est espresso seasonal caramelization brewed sugar blue mountain ut skinny extraction flavour.
