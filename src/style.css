@@ -133,7 +133,7 @@ hr {
   margin-left: 31px;
 }
 
-.blog-post-p {
+.blog-post-content {
   color: var(--blog-font);
   font-style: Regular;
   font-size: 1.16rem;
@@ -294,4 +294,5 @@ footer {
     font-size: 2em;
   }
   
+
 
