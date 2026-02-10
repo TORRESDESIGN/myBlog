@@ -1,7 +1,7 @@
 ---
 title: My first blog post
 author: Daniel Torres
-date: 2026-02-11
+date: 2026-02-11T12:00:00-08:00
 tags: post
 image: /images/placeHolder.png
 imageAlt: image of place holder
