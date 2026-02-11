@@ -68,8 +68,40 @@ module.exports = function(eleventyConfig) {
     });
 }
 ```
+
 In the n\_includes folder, create article.njk
 Copy post.njk contents in there or just move to the folder with new name
+
+### fix ```{{ content | safe }}``` in a paragraph tag not accepting css class.
+since content creates a new p tag with text it gets from markdown and inserts it to article file, I needed to remove p tag and wrap in div
+tag with the css class, such as below.
+
+article.njk ex:
+```
+---
+layout: 'base.njk'
+---
+
+<figure>
+  <img src="{{ image }}" alt="{{ imageAlt }}" class="blog-image">
+  <figcaption>{{ imageAlt }}</figcaption>
+</figure>
+<article>
+  <h1 class="blog-post-title">{{ title }}</h1>
+  <p class="post-date">{{ date | postDate }} - 2 min read</p>
+  <div class="blog-post-content">
+    {{ content | safe }}
+  </div>
+  
+  <div class="tag-container">
+    <a href="" class="tag">HTML5</a>
+    <a href="" class="tag">CSS3</a>
+    <a href="" class="tag">JavaScript</a>
+    <a href="" class="tag">NodeJS</a>
+  </div>
+</article>
+
+```
 
 
 ---
