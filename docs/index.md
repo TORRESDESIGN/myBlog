@@ -69,7 +69,7 @@ module.exports = function(eleventyConfig) {
 }
 ```
 
-In the n\_includes folder, create article.njk
+In the```_includes``` folder, create article.njk
 Copy post.njk contents in there or just move to the folder with new name
 
 ### fix ```{{ content | safe }}``` in a paragraph tag not accepting css class.
@@ -102,9 +102,38 @@ layout: 'base.njk'
 </article>
 
 ```
-
+### Create reusable snippets
+From index.njk file, grab reusable snippet such as the aricle tag in this for loop:
+```
+<section>
+      {%- for post in collections.post | reverse -%}
+      {# copy start #}
+        <article class="article-top-margin">
+          <a href="{{ post.url }}" target="_blank">
+            <figure>
+              <img src="{{ post.data.image}}" alt="{{ post.data.imageAlt }}" class="blog-image">
+              <figcaption>{{ post.data.date | postDate }} - 2 minute read</figcaption>
+              <h1 class="blog-post-title">{{ post.data.title }}</h1>
+            </figure>
+          </a>
+        </article>
+        {# copy end #}
+      {%- endfor -%}
+    </section>
+```
+Create new article-snippet.njk file in ```_includes folder ``` and past snippet.
+And then add snippet back to index.njk as so:
+```
+<section>
+      {%- for post in collections.post | reverse -%}
+        {% include 'article-snippet.njk' %}
+      {%- endfor -%}
+    </section>
+```
 
 ---
+# Markdown Cheatsheet
+
 # H1
 ## H2
 ### H3

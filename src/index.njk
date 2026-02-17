@@ -17,15 +17,7 @@ layout: 'base.njk'
 		</div>
 		<section>
 			{%- for post in collections.post | reverse -%}
-				<article class="article-top-margin">
-					<a href="{{ post.url }}" target="_blank">
-						<figure>
-							<img src="{{ post.data.image}}" alt="{{ post.data.imageAlt }}" class="blog-image">
-							<figcaption>{{ post.data.date | postDate }} - 2 minute read</figcaption>
-							<h1 class="blog-post-title">{{ post.data.title }}</h1>
-						</figure>
-					</a>
-				</article>
+				{% include 'article-snippet.njk' %}
 			{%- endfor -%}
 		</section>
 	</main>
