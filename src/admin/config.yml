@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: TORRESDESIGN/myBlog
+  branch: main
+media_folder: "src/images"
+public_folder: "/images"
+collections: # A list of collections the CMS should be able to edit
+  - name: 'blog' # Used in routes, ie.: /admin/collections/:slug/edit
+    label: 'Blog' # Used in the UI
+    folder: 'src/blog'
+    create: true # Allow users to create new documents in this collection
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields: # label is what I'll see in  ui | name = front matter label
+      - { label: 'Title', name: 'title', widget: 'string'}
+      - { label: 'Author', name: 'author', widget: 'string'}
+      - { label: 'Date', name: 'date', widget: 'datetime'}
+      - { label: 'Tags', name: 'tags', widget: 'list', default: ['post']}
+      - { label: 'Hero image', name: 'image', widget: 'image'}
+      - { label: 'Image caption', name: 'imageAlt', widget: 'string'}
+      - { label: 'Body', name: 'body', widget: 'markdown'}
