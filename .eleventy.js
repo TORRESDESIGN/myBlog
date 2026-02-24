@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setInputDirectory("src");
     eleventyConfig.addPassthroughCopy("src/images");// globing method to get everything in folder
     eleventyConfig.addPassthroughCopy("src/style.css");
+    eleventyConfig.addPassthroughCopy("src/admin");
 
     //Date fix newer version?
     //eleventyConfig.addDateParsing()
