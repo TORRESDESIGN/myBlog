@@ -8,7 +8,7 @@ layout: 'base.njk'
 </figure>
 <article>
 	<h1 class="blog-post-title">{{ title }}</h1>
-	<p class="post-date">By {{ author }} {{ date | postDate }} - 2 min read</p>
+	<p class="post-date">{{ date | postDate }} - 2 min read</p>
 	<div class="blog-post-content">
 		{{ content | safe }}
 	</div>
