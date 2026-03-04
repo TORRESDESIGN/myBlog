@@ -2,21 +2,24 @@
 layout: 'base.njk'
 ---
 
-<figure>
-	<img src="{{ image }}" alt="{{ imageAlt }}" class="blog-image">
-	<figcaption>{{ imageAlt }}</figcaption>
-</figure>
-<article>
-	<h1 class="blog-post-title">{{ title }}</h1>
-	<p class="post-date">{{ date | postDate }} - 2 min read</p>
-	<div class="blog-post-content">
-		{{ content | safe }}
-	</div>
-	
-	<div class="tag-container">
-		<a href="" class="tag">HTML5</a>
-		<a href="" class="tag">CSS3</a>
-		<a href="" class="tag">JavaScript</a>
-		<a href="" class="tag">NodeJS</a>
-	</div>
-</article>
+<main>
+	<figure>
+		<img src="{{ image }}" alt="{{ imageAlt }}" class="blog-image">
+		<figcaption class="align-right">{{ imageAlt }}</figcaption>
+	</figure>
+
+	<article>
+		<h1 class="blog-post-title">{{ title }}</h1>
+		<p class="post-date">{{ date | postDate }} - 2 min read</p>
+		<div class="blog-post-content">
+			{{ content | safe }}
+		</div>
+		
+		<div class="tag-container">
+			<a href="" class="tag">HTML5</a>
+			<a href="" class="tag">CSS3</a>
+			<a href="" class="tag">JavaScript</a>
+			<a href="" class="tag">NodeJS</a>
+		</div>
+	</article>
+</main>

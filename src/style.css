@@ -75,6 +75,7 @@ main {
   margin-right: 5.38px;
   padding: 5px 10px;
 }
+
 .tag-container {
   margin-left: 31px;
   margin-top: 29px;
@@ -157,7 +158,10 @@ figcaption {
   color: var(--blog-font);
   opacity: 0.5;
   margin-top: 14px;
-  margin-left: 14px;
+  margin-right: 14px;
+}
+.align-right {
+  text-align: right;
 }
 
 .hero img {
@@ -189,10 +193,6 @@ h4 {
 
 /* || layout -links  */
 
-header {
-  width: 100%;
-  height: auto;
-}
 .nav-container {
   position: fixed;
   top: 0;
@@ -203,6 +203,11 @@ header {
     var(--primary-teal));
   color: var(--light-color);
   border-bottom: 2px solid white;
+}
+
+header {
+  width: 100%;
+  height: auto;
 }
 
 nav a {
@@ -287,9 +292,14 @@ footer {
 
 /* || smaller screens */
 /*OG: 854px*/
+
 @media only screen and (max-width: 740px) {
   body {
     font-size: 16px;
+  }
+
+  main {
+    width: 100%;
   }
 
   h1 {
@@ -299,20 +309,56 @@ footer {
   h2 {
     font-size: 2em;
   }
+
   section {
-  grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
+
+  figcaption {
+    margin-top: 7px;
+    margin-right: 14px;
+    margin-left: 14px;
+  }
+
+  .align-right {
+    text-align: left;
+  }
+
   .blog-title {
     padding-bottom: 20px;
   }
+  .blog-post-title {
+    line-height: 53px;
+    text-align: left;
+    margin-top: 14px;
+    margin-left: 14px;
+  }
+
+  .post-date {
+    margin-top: 7px;
+    margin-left: 14px;
+  }
+
+  .blog-post-content {
+    margin-left: 14px;
+    margin-top: 29px;
+  }
+
+  .tag-container {
+    margin-left: 14px;
+    margin-top: 29px;
+  }
+
+
   /*
   .article-top-margin {
   margin-top: 24px;
   }
-  */
+  
   .blog-image {
   margin-top: 26px;
-}
+  }
+  */
 
 }
 
