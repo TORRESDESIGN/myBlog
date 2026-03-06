@@ -12,8 +12,7 @@
       4.1 buttons
       4.2 cards 
 
-
-   7. Smaller screens
+   7. Smaller screens*
 
 */
 
@@ -77,7 +76,7 @@ main {
 }
 
 .tag-container {
-  margin-left: 31px;
+  margin-left: 14px;
   margin-top: 29px;
 }
 
@@ -130,7 +129,7 @@ hr {
   line-height: 53px;
   text-align: left;
   margin-top: 14px;
-  margin-left: 31px;
+  margin-left: 14px;
 }
 
 .blog-post-content {
@@ -140,7 +139,7 @@ hr {
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0%;
-  margin-left: 31px;
+  margin-left: 14px;
   margin-top: 29px;
 }
 
@@ -154,14 +153,18 @@ hr {
 a {
   text-decoration: none;
 }
+
 figcaption {
   color: var(--blog-font);
   opacity: 0.5;
   margin-top: 14px;
   margin-right: 14px;
+  margin-left: 14px;
 }
+
 .align-right {
   text-align: right;
+  margin-top: 0px;
 }
 
 .hero img {
@@ -173,7 +176,7 @@ figcaption {
   color: var(--blog-font);
   opacity: 0.5;
   margin-top: 30px;
-  margin-left: 31px;
+  margin-left: 14px;
 }
 h1 {
   font-size: 2.81rem;
@@ -315,9 +318,9 @@ footer {
   }
 
   figcaption {
-    margin-top: 7px;
+    margin-top: 0px;
     margin-right: 14px;
-    margin-left: 14px;
+    margin-left: 0px;
   }
 
   .align-right {
@@ -325,22 +328,23 @@ footer {
   }
 
   .blog-title {
+    font-size: 4rem;
     padding-bottom: 20px;
   }
   .blog-post-title {
     line-height: 53px;
     text-align: left;
-    margin-top: 14px;
-    margin-left: 14px;
+    margin-top: 0px;
+    margin-left: 0px;
   }
 
   .post-date {
     margin-top: 7px;
-    margin-left: 14px;
+    margin-left: 0px;
   }
 
   .blog-post-content {
-    margin-left: 14px;
+    margin-left: 0px;
     margin-top: 29px;
   }
 
@@ -348,17 +352,19 @@ footer {
     margin-left: 0px;
     margin-top: 29px;
   }
+  .year {
+    margin-top: 25px;
+  }
 
 
   /*
   .article-top-margin {
   margin-top: 24px;
   }
-  
-  .blog-image {
-  margin-top: 26px;
-  }
   */
+  .top-margin-half {
+    margin-top: 26px;
+  }
 
 }
 
