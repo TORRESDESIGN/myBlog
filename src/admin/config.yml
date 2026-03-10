@@ -14,7 +14,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'Title', name: 'title', widget: 'string'}
       - { label: 'Author', name: 'author', widget: 'string'}
       - { label: 'Date', name: 'date', widget: 'datetime'}
-      - { label: 'Tags', name: 'tags', widget: 'list', default: ['post']}
+      - { label: 'Tags', name: 'tags', widget: 'list', allow_add: true , default: ['post']}
       - { label: 'Hero image', name: 'image', widget: 'image'}
       - { label: 'Image caption', name: 'imageAlt', widget: 'string'}
       - { label: 'Body', name: 'body', widget: 'markdown'}
