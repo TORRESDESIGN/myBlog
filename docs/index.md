@@ -28,7 +28,7 @@ tags: post
 
 lorum impsum text..
 ```
-9. The index page where all muy post will show, convert index.html => index.njk
+9. The index page where all my post will show, convert index.html => index.njk
 Add front matter vars needed such as title, and add base layout, and loop functions {%- for post in collections.post -%}
 for loops (tags: post) in collections.post (post tags are a collection)
 img and title tags etc that's in each post can be looped by ex: {{ post.data.image}}
@@ -124,7 +124,7 @@ From index.njk file, grab reusable snippet such as the aricle tag in this for lo
 Create new article-snippet.njk file in ```_includes folder ``` and past snippet.
 And then add snippet back to index.njk as so:
 ```
-<section>
+    <section>
       {%- for post in collections.post | reverse -%}
         {% include 'article-snippet.njk' %}
       {%- endfor -%}
