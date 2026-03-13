@@ -8,10 +8,9 @@ tags:
 image: /images/banner1600x618.png
 imageAlt: Teal banner that says JavaScript
 ---
-# This is about JS
 test test test
 test test test
 test test test
 test test testtest test testtest test testtest test testtest test testtest test testtest test testtest test testtest test test
 test test testtest test testtest test testtest test testtest test testtest test testtest test testtest test testtest test testtest test test
-![](src/images/placeHolder.png)
+![image](src/images/placeHolder.png)
