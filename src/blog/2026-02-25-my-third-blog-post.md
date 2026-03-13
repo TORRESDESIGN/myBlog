@@ -10,3 +10,26 @@ imageAlt: Test image
 **Important message.**
 
 I love my wife, and I shall take her on a date.
+
+![test image](/images/banner1600x618.png "image of test")
+
+# H1
+## H2
+### H3
+*Italic*
+
+**Bold**
+
+> Blockquote
+1. One
+2. Two
+3. Three
+* List
+* List
+* List
+
+```
+let ingredientList = ingredient.map(item => {
+  return [item.body]
+})
+```
