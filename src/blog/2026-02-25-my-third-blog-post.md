@@ -4,7 +4,7 @@ author: Daniel Torres
 date: 2026-02-24T16:40:00.000-08:00
 tags:
   - post
-image: /images/placeHolder.png
+image: /images/banner1600x618.png
 imageAlt: Test image
 ---
 **Important message.**
