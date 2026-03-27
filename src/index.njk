@@ -5,11 +5,28 @@ layout: 'base.njk'
 
 	<main>
 		<h1 class="blog-title">Blog</h1>
+
+		<!-- Dynamic tag links from collections -->
+		{% set allTags = [] %}
+		{% for post in collections.post %}
+		{% for tag in post.data.tags %}
+		  {% if tag != "post" and tag not in allTags %}
+		    {% set allTags = (allTags.push(tag), allTags) %}
+		  {% endif %}
+		{% endfor %}
+		{% endfor %}
+
+		{% for tag in allTags %}
+    		<a href="/tags/{{ tag }}/" class="tag">{{ tag }}</a>
+  		{% endfor %}
+
 		<!-- make blog tags from a tags-->
+		<!-- old
 		<a href="" class="tag">HTML5</a>
 		<a href="" class="tag">CSS3</a>
 		<a href="" class="tag">JavaScript</a>
 		<a href="" class="tag">NodeJS</a>
+		old --> 
 
 		<div>
 			<p class="year">2026</p>

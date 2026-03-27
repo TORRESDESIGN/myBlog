@@ -1,0 +1,32 @@
+---
+layout: base.njk
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - "all"
+    - "post"
+permalink: /tags/{{ tag }}/
+---
+
+<main>  
+  <h1 class="blog-title">Posts tagged "{{ tag }}"</h1>
+
+  <a href="/">← Back to all posts</a>
+
+  <!-- original -->
+  <ul>
+    {% for post in collections[tag] | reverse %}
+      <article class="article-top-margin">
+        <a href="{{ post.url }}" target="_blank">
+          <figure>
+            <img src="{{ post.data.image}}" alt="{{ post.data.imageAlt }}" class="blog-image top-margin-half">
+            <figcaption>By {{ post.data.author }} | {{ post.data.date | postDate }} | 2 minute read</figcaption>
+            <h2 class="blog-post-title">{{ post.data.title }}</h2>
+          </figure>
+        </a>
+      </article>
+    {% endfor %}
+  </ul>  
+</main>
