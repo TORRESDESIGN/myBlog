@@ -17,7 +17,6 @@ permalink: /tags/{{ tag }}/
   <hr />
 
   <!-- original -->
-  <ul>
     {% for post in collections[tag] | reverse %}
       <article class="article-top-margin">
         <a href="{{ post.url }}" target="_blank">
@@ -28,6 +27,5 @@ permalink: /tags/{{ tag }}/
           </figure>
         </a>
       </article>
-    {% endfor %}
-  </ul>  
+    {% endfor %}  
 </main>
