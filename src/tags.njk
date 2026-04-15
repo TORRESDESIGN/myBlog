@@ -19,10 +19,10 @@ permalink: /tags/{{ tag }}/
   <!-- original -->
     {% for post in collections[tag] | reverse %}
       <article class="article-top-margin">
-        <a href="{{ post.url }}" target="_blank">
+        <a href="{{ post.url }}">
           <figure>
             <img src="{{ post.data.image}}" alt="{{ post.data.imageAlt }}" class="blog-image top-margin-half">
-            <figcaption>By {{ post.data.author }} | {{ post.data.date | postDate }} | 2 minute read</figcaption>
+            <figcaption>By {{ post.data.author }} | {{ post.data.date | postDate }}</figcaption>
             <h2 class="blog-post-title">{{ post.data.title }}</h2>
           </figure>
         </a>
