@@ -76,6 +76,14 @@ code {
   font-size: 1em;
   white-space: pre;
 }   
+ /* This fixes blockquote not working */
+blockquote {
+  border-left: 4px solid #ccc;
+  margin: 1rem 0;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  /*color: #555;
+  font-style: italic;*/
+}
 
 .blog-title {
   color: var(--blog-font);
@@ -162,6 +170,11 @@ hr {
   letter-spacing: 0%;
   margin-left: 14px;
   margin-top: 29px;
+}
+
+/* This fixes the line break issue */
+.blog-post-content p {
+  margin-bottom: 1rem;
 }
 
 .blog-btn {
