@@ -78,9 +78,10 @@ code {
 }   
  /* This fixes blockquote not working */
 blockquote {
-  border-left: 4px solid #ccc;
+  border-left: 9px solid var(--primary-teal);
   margin: 1rem 0;
   padding: 0.5rem 0 0.5rem 1.5rem;
+  background-color: var(--light-color);
   /*color: #555;
   font-style: italic;*/
 }
@@ -173,7 +174,14 @@ hr {
 }
 
 /* This fixes the line break issue */
-.blog-post-content p {
+.blog-post-content p,
+.blog-post-content h1,
+.blog-post-content h2,
+.blog-post-content h3,
+.blog-post-content ul,
+.blog-post-content ol,
+.blog-post-content blockquote,
+.blog-post-content pre {
   margin-bottom: 1rem;
 }
 
