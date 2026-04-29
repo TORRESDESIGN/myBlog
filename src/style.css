@@ -365,7 +365,12 @@ footer {
     margin-right: 14px;
     margin-left: 0px;
   }
-
+  ul {
+    padding-inline-start: 25px;
+  }
+  li ul {
+    padding-left: 10px;
+  }
   .align-right {
     text-align: left;
   }
