@@ -16,19 +16,17 @@ imageAlt: Yellow image that says ReactJS
 
 ### Things to know:
 
-* React works better with **declarative functions**(ex: map functions)
-* **Propeties** = props => makes components more reusable ♻️
-* 👶Siblings cannot pass props, they must get from the parent 🧑‍🍼
-* keep state as local as you can
-
-  * if only one child needs props, keep it locally there
-* React uses JSX,{} converts to JS-Land
-
-  * JSX returns JS object
-* Parenthesis() after return help you indent JSX item
-* No longer required after **React 17** to import `React` from the `'react'` module in every file that uses JSX
-*
-* Simple react Hello World example
+- React works better with **declarative functions**(ex: map functions)
+- **Propeties** = props => makes components more reusable ♻️
+- 👶Siblings cannot pass props, they must get from the parent 🧑‍🍼
+- keep state as local as you can
+  - if only one child needs props, keep it locally there
+- React uses JSX,{} converts to JS-Land
+  - JSX returns JS object
+- Parenthesis() after return help you indent JSX item
+- No longer required after **React 17** to import `React` from the `'react'` module in every file that uses JSX
+-
+- Simple react Hello World example
 
 > ex: **index.jsx**
 >
