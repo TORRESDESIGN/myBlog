@@ -57,3 +57,25 @@ imageAlt: Yellow image that says ReactJS
 >    </body>
 > </html>
 > ```
+
+* Simple react Component example
+
+> ex: **index.jsx**>
+> ```
+> import { createRoot } from "react-dom/client";
+> 
+> const root = createRoot(document.getElementById("root"));
+> 
+> function MainContent() {
+>   return <h1>This is the best website in the world!</h1>
+> }
+> 
+> root.render(
+> <div>
+>   <MainContent />
+> </div>
+> );
+> ```
+>
+> index.jsx renders to root div in index.html as in previous example
+> **index.html**
