@@ -16,21 +16,19 @@ imageAlt: Yellow image that says ReactJS
 
 ### Things to know:
 
-* React works better with **declarative functions**(ex: map functions)
-* **Propeties** = props => makes components more reusable ♻️
-* 👶Siblings cannot pass props, they must get from the parent 🧑‍🍼
-* keep state as local as you can
-
-  * if only one child needs props, keep it locally there
-* React uses JSX,{} converts to JS-Land
-
-  * JSX(JavaScript XML) returns JS object
-  * JSX introduces unique HTML syntax(ex: class = **className**, for = **htmlFor**, tabindex = **tabIndex**, stroke-width = **strokeWidth**, onclick = **onClick**, onchange = **onChange**, readonly = **readOnly**)
-  * JSX requires all tags to be explicitly closed, such as self-closing tags like images or line breaks must end with a slash(ex: <br />)
-* Parenthesis() after return help you indent JSX item
-* No longer required after **React 17** to import React from the react module in every file that uses JSX
-* Components and their files should use PascalCase(ex:UserProfile.js)
-* Simple react Hello World example
+- React works better with **declarative functions**(ex: map functions)
+- **Propeties** = props => makes components more reusable ♻️
+- 👶Siblings cannot pass props, they must get from the parent 🧑‍🍼
+- keep state as local as you can
+  - if only one child needs props, keep it locally there
+- React uses JSX,{} converts to JS-Land
+  - JSX(JavaScript XML) returns JS object
+  - JSX introduces unique HTML syntax(ex: class = **className**, for = **htmlFor**, tabindex = **tabIndex**, stroke-width = **strokeWidth**, onclick = **onClick**, onchange = **onChange**, readonly = **readOnly**)
+  - JSX requires all tags to be explicitly closed, such as self-closing tags like images or line breaks must end with a slash(ex: <br />)
+- Parenthesis() after return help you indent JSX item
+- No longer required after **React 17** to import React from the react module in every file that uses JSX
+- Components and their files should use PascalCase(ex:UserProfile.js)
+- Simple react Hello World example
 
 > ex: **index.jsx**
 >
@@ -58,7 +56,7 @@ imageAlt: Yellow image that says ReactJS
 > </html>
 > ```
 
-* Simple react Component example
+- Simple react Component example
 
 > ex: **index.jsx**>
 > ```
