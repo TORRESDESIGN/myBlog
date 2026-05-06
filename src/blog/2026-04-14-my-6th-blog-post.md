@@ -15,7 +15,6 @@ imageAlt: Yellow image that says ReactJS
 (*React is a front-end JavaScript library created by Facebook that is very popular to this day in the year of our lord 2026.*)
 
 ### Things to know:
-
 - React works better with **declarative functions**(ex: map functions)
 - **Propeties** = props => makes components more reusable ♻️
 - 👶Siblings cannot pass props, they must get from the parent 🧑‍🍼
@@ -28,8 +27,8 @@ imageAlt: Yellow image that says ReactJS
 - Parenthesis() after return help you indent JSX item
 - No longer required after **React 17** to import React from the react module in every file that uses JSX
 - Components and their files should use PascalCase(ex:UserProfile.js)
-- Simple react Hello World example
 
+### Simple react Hello World example:
 > ex: **index.jsx**
 >
 > This is where we write up our markup(HTML) language in our JS file. React does the magic 🪄 of adding that to the root div in HTML file.
@@ -56,8 +55,7 @@ imageAlt: Yellow image that says ReactJS
 > </html>
 > ```
 
-- Simple react Component example
-
+### Simple react Component example:
 > ex: **index.jsx**>
 > ```
 > import { createRoot } from "react-dom/client";
@@ -77,3 +75,18 @@ imageAlt: Yellow image that says ReactJS
 >
 > index.jsx renders to root div in index.html as in previous example
 > **index.html**
+
+### Imperative coding ex:
+Manually telling what to do in your code
+```
+const h1 = document.createElement("h1");
+const textNode = document.createTextNode("Coolio");
+h1.appendChild(textNode);
+h1.classList.add("header");
+/*
+or
+h1.textContent = "This is imperative coding"
+h1.className = "header"
+*/
+document.getElementById("root").appendChild(h1) 
+```
