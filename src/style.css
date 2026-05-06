@@ -85,6 +85,10 @@ blockquote {
   /*color: #555;
   font-style: italic;*/
 }
+/*code comments syntax*/
+pre code .token.comment {
+  color: #6a737d;
+}
 
 .blog-title {
   color: var(--blog-font);

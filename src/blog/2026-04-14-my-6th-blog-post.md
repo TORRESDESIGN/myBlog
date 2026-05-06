@@ -78,15 +78,15 @@ imageAlt: Yellow image that says ReactJS
 
 ### Imperative coding ex:
 Manually telling what to do in your code
-```
-const h1 = document.createElement("h1");
-const textNode = document.createTextNode("Coolio");
-h1.appendChild(textNode);
-h1.classList.add("header");
-/*
-or
-h1.textContent = "This is imperative coding"
-h1.className = "header"
-*/
-document.getElementById("root").appendChild(h1) 
-```
+> ```js
+> const h1 = document.createElement("h1");
+> const textNode = document.createTextNode("Coolio");
+> h1.appendChild(textNode);
+> h1.classList.add("header");
+> /*
+> or
+> h1.textContent = "This is imperative coding"
+> h1.className = "header"
+> */
+> document.getElementById("root").appendChild(h1) 
+> ```

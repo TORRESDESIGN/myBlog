@@ -130,7 +130,23 @@ And then add snippet back to index.njk as so:
       {%- endfor -%}
     </section>
 ```
-Test*
+### Fix comments not working in code blocks
+Need to download syntaxHighlight plugin and config file needs these:
+```
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
+module.exports = function(eleventyConfig) {
+    //This is for code block syntax for comments
+    eleventyConfig.addPlugin(syntaxHighlight);
+
+    // CRITICAL: Enable Nunjucks for Markdown
+    return {
+    markdownTemplateEngine: "njk"
+  };
+}
+```
+code blocks also need js after back tics
+ex: ```js
 
 
 ---
