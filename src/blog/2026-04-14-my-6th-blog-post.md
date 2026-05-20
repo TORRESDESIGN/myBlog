@@ -90,3 +90,16 @@ Manually telling what to do in your code
 > */
 > document.getElementById("root").appendChild(h1) 
 > ```
+
+If using **Vite**, and your **js** file is using **jsx**, it need to be renamed to **.jsx** file so it functions correctly
+
+index.html file will also need to be updated, ex:
+> ```
+> ...
+> <body>
+> <div id="root"></div>
+> <script src="/index.jsx" type="module"></script>
+> </body>
+> ...
+> ```
+
