@@ -15,20 +15,24 @@ imageAlt: Yellow image that says ReactJS
 (*React is a front-end JavaScript library created by Facebook that is very popular to this day in the year of our lord 2026.*)
 
 ### Things to know:
-- React works better with **declarative functions**(ex: map functions)
-- **Propeties** = props => makes components more reusable ♻️
-- 👶Siblings cannot pass props, they must get from the parent 🧑‍🍼
-- keep state as local as you can
-  - if only one child needs props, keep it locally there
-- React uses JSX,{} converts to JS-Land
-  - JSX(JavaScript XML) returns JS object
-  - JSX introduces unique HTML syntax(ex: class = **className**, for = **htmlFor**, tabindex = **tabIndex**, stroke-width = **strokeWidth**, onclick = **onClick**, onchange = **onChange**, readonly = **readOnly**)
-  - JSX requires all tags to be explicitly closed, such as self-closing tags like images or line breaks must end with a slash(ex: <br />)
-- Parenthesis() after return help you indent JSX item
-- No longer required after **React 17** to import React from the react module in every file that uses JSX
-- Components and their files should use PascalCase(ex:UserProfile.js)
+
+* React works better with **declarative functions**(ex: map functions)
+* **Propeties** = props => makes components more reusable ♻️
+* 👶Siblings cannot pass props, they must get from the parent 🧑‍🍼
+* keep state as local as you can
+
+  * if only one child needs props, keep it locally there
+* React uses JSX,{} converts to JS-Land
+
+  * JSX(JavaScript XML) returns JS object
+  * JSX introduces unique HTML syntax(ex: class = **className**, for = **htmlFor**, tabindex = **tabIndex**, stroke-width = **strokeWidth**, onclick = **onClick**, onchange = **onChange**, readonly = **readOnly**)
+  * JSX requires all tags to be explicitly closed, such as self-closing tags like images or line breaks must end with a slash(ex: <br />)
+* Parenthesis() after return help you indent JSX item
+* No longer required after **React 17** to import React from the react module in every file that uses JSX
+* Components and their files should use PascalCase(ex:UserProfile.js)
 
 ### Simple react Hello World example:
+
 > ex: **index.jsx**
 >
 > This is where we write up our markup(HTML) language in our JS file. React does the magic 🪄 of adding that to the root div in HTML file.
@@ -56,20 +60,20 @@ imageAlt: Yellow image that says ReactJS
 > ```
 
 ### Simple react Component example:
+
 > ex: **index.jsx**>
+>
 > ```
 > import { createRoot } from "react-dom/client";
-> 
+>
 > const root = createRoot(document.getElementById("root"));
-> 
+>
 > function MainContent() {
 >   return <h1>This is the best website in the world!</h1>
 > }
-> 
+>
 > root.render(
-> <div>
 >   <MainContent />
-> </div>
 > );
 > ```
 >
@@ -77,7 +81,9 @@ imageAlt: Yellow image that says ReactJS
 > **index.html**
 
 ### Imperative coding ex:
+
 Manually telling what to do in your code
+
 > ```js
 > const h1 = document.createElement("h1");
 > const textNode = document.createTextNode("Coolio");
@@ -94,6 +100,7 @@ Manually telling what to do in your code
 If using **Vite**, and your **js** file is using **jsx**, it need to be renamed to **.jsx** file so it functions correctly
 
 index.html file will also need to be updated, ex:
+
 > ```
 > ...
 > <body>
@@ -103,3 +110,5 @@ index.html file will also need to be updated, ex:
 > ...
 > ```
 
+### Fragment brackets
+Wrapping your react components with a div will create unnecessary divs when rendered. To avoid this, you can use **Fragments**(**<></>**) to wrap your components instead. These will be removed when rendered.
