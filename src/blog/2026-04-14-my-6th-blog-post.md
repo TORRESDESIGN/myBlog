@@ -61,7 +61,7 @@ imageAlt: Yellow image that says ReactJS
 
 ### Simple react Component example:
 
-> ex: **index.jsx**>
+> ex: **index.jsx**
 >
 > ```
 > import { createRoot } from "react-dom/client";
@@ -111,7 +111,9 @@ index.html file will also need to be updated, ex:
 > ```
 
 ### Fragment brackets
+
 Wrapping your react components with a div will create unnecessary divs when rendered. To avoid this, you can use **Fragments**(**<></>**) to wrap your components instead. These will be removed when rendered.(caution: sideffects with; flexbox, grid containers, and child elements)
+
 ```
 function Page() {
     return (
@@ -128,19 +130,22 @@ root.render(
 ```
 
 ### Creating and exporting components
+
 You could do this on the same App.jsx page, but that would defeat the purpose of making reusable components and oraganizing your app.
 Here's an example modifying vite react:
+
 📂 react app
-> 📂 src
-  > 📁 assets
-  > App.jsx
-  > Header.jsx <-- new file/component created
-  > Main.jsx
+-📂 src
+-📁 assets
+-App.jsx
+-Header.jsx <-- new file/component created
+-Main.jsx
 
 > **Header.jsx**
+>
 > ```
 > import reactLogo from './assets/react.svg'
-> 
+>
 > function Header() {
 >  return(
 >    <header>
@@ -148,15 +153,17 @@ Here's an example modifying vite react:
 >    </header>
 >  )
 > }
-> 
+>
 > export default Header 
 > ``
-
+> ```
+>
 > **App.jsx**
+>
 > ```
 > import './App.css'
 > import Header from '/src/Header'
-> 
+>
 > function App() {
 >   return (
 >     <main>
@@ -165,6 +172,6 @@ Here's an example modifying vite react:
 >     </main>
 >   )
 > }
-> 
+>
 > export default App
 > ```
