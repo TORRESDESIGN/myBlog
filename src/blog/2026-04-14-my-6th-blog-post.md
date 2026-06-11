@@ -45,6 +45,7 @@ imageAlt: Yellow image that says ReactJS
 > ```
 >
 > index.jsx renders to root div in index.html
+
 > **index.html**
 >
 > ```
@@ -135,10 +136,15 @@ You could do this on the same App.jsx page, but that would defeat the purpose of
 Here's an example modifying vite react:
 
 📂 react app
+
 -📂 src
+
 -📁 assets
+
 -App.jsx
+
 -Header.jsx <-- new file/component created
+
 -Main.jsx
 
 > **Header.jsx**
