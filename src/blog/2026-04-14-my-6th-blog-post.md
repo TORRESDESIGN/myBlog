@@ -156,6 +156,13 @@ Here's an example modifying vite react:
 >  return(
 >    <header>
 >      <img src={reactLogo} alt="react logo" />
+>      <nav>
+>         <ul className= "nav-list">
+>             <li>Home</li>
+>             <li>About</li>
+>             <li>Contact</li>
+>         </ul>
+>     </nav>
 >    </header>
 >  )
 > }
