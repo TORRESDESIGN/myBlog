@@ -135,17 +135,17 @@ root.render(
 You could do this on the same App.jsx page, but that would defeat the purpose of making reusable components and oraganizing your app.
 Here's an example modifying vite react:
 
-📂 react app
-
--📂 src
-
--📁 assets
-
--App.jsx
-
--Header.jsx <-- new file/component created
-
--Main.jsx
+> 📂 react app
+>
+> -📂 src
+>
+> -📁 assets
+>
+> -App.jsx
+>
+> -Header.jsx <-- new file/component created
+>
+> -Main.jsx
 
 > **Header.jsx**
 >
