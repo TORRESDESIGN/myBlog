@@ -45,7 +45,7 @@ imageAlt: Yellow image that says ReactJS
 > ```
 >
 > index.jsx renders to root div in index.html
-
+>
 > **index.html**
 >
 > ```
@@ -137,16 +137,16 @@ Here's an example modifying vite react:
 
 > 📂 react app
 >
-> -📂 src
+> \-📂 src
 >
-> -📁 assets
+> \-📁 assets
 >
-> -App.jsx
+> \-App.jsx
 >
-> -Header.jsx <-- new file/component created
+> \-Header.jsx <-- new file/component created
 >
-> -Main.jsx
-
+> \-Main.jsx
+>
 > **Header.jsx**
 >
 > ```
@@ -188,3 +188,18 @@ Here's an example modifying vite react:
 >
 > export default App
 > ```
+
+Common practice is you put your components in a components folder and export them to Apps file and export Apps file to Main or Index.jsx file.
+
+📁 **Components**(Header.jsx, Section.jsx, etc) ➡️ **App.jsx** ➡️ **main.jsx or index.jsx**
+```
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+const root = createRoot(document.getElementById('root'))
+
+root.render(
+    <App />
+)
+
+```
