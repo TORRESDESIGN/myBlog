@@ -1,7 +1,7 @@
 ---
 title: ReactJS information for beginners
 author: Daniel Torres
-date: 2026-04-28
+date: 2026-08-11
 tags:
   - react
 image: /images/bannerReact1600x618.png
