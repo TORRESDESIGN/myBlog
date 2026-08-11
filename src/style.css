@@ -279,8 +279,6 @@ nav {
   display: grid;
   grid-template-columns: auto 1fr auto;
   /*grid-template-columns: auto 1fr auto;*/
-  padding: 10px 0;
-
 }
 
 nav #logo {
@@ -290,8 +288,6 @@ nav #logo {
   letter-spacing: 0.5px;
   grid-row: 1;
   grid-column: 1;
-  border: 2px solid red;
-
 }
 /*
 .right-menu {
