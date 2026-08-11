@@ -1,5 +1,5 @@
 
-/* Table of Contents example:
+/* Table of Contents for blog example:
    
    1. global styles
 
@@ -278,8 +278,10 @@ nav {
   margin: 0 auto;
   display: grid;
   grid-template-columns: auto 1fr auto;
-}
+  /*grid-template-columns: auto 1fr auto;*/
 
+}
+`
 nav #logo {
   margin: 15px 0 15px 15px;
   font-size: 1.24em;
@@ -288,12 +290,13 @@ nav #logo {
   grid-row: 1;
   grid-column: 1;
 }
-
+/*
 .right-menu {
   margin-right: 15px;
   grid-column: 3;
   align-self: center;
 }
+*/
 
 footer {
   margin-top: 50px;
