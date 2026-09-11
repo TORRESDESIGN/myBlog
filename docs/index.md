@@ -161,7 +161,8 @@ ex: ```js
 
 [Markdown Link](https://commonmark.org/help/) 
 
-![Image](http://url/a.png)  
+![Image](http://url/a.png)
+![image](/images/Banner342x132.png "image of yellow banner") 
 
 > Blockquote
 1. One

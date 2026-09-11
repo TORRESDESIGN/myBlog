@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   repo: TORRESDESIGN/myBlog
   branch: main
+# This line enables the Save Draft / Review / Publish workflow
+publish_mode: editorial_workflow
 media_folder: "src/images"
 public_folder: "/images"
 collections: # A list of collections the CMS should be able to edit
