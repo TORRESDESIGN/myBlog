@@ -9,19 +9,59 @@ imageAlt: Banner that says ReactJS
 ---
 ### Creating a component card with props data:
 
-  * JSX(JavaScript XML) returns JS object
-  * JSX introduces unique HTML syntax(ex: class = **className**, for = **htmlFor**, tabindex = **tabIndex**, stroke-width = **strokeWidth**, onclick = **onClick**, onchange = **onChange**, readonly = **readOnly**)
-  * JSX requires all tags to be explicitly closed, such as self-closing tags like images or line breaks must end with a slash(ex: <br />)
-* Parenthesis() after return help you indent JSX item
+Create a Joke component(Joke.jsx).
+
+📂 react app
+--📂 src
+-- App.jsx
+-- Jokes.jsx   <--- Just created
+--📁 assets etc..
+
+**Jokes.jsx**
+
+```
+function Joke(props) {
+	return (
+		<>
+			<h2>{props.setup}</h2>
+			<p>{props.punchline}</p>
+		</>
+	)
+}
+
+export default Joke;
+```
+
+Import component to App.jsx file
+**App.jsx**
+```
+function App() {
+  return(
+    <>
+      <img src={Logo} alt="react logo" className="logo" />
+      <h1>DAD JOKES</h1>
+      <Jokes 
+        setup="Why can't a nose be 12 inches long?"
+        punchline="Because then it would be a foot."
+      />
+      <Jokes 
+        setup="How do you organize a party on Mars?"
+        punchline="You planet."
+      />
+    </section>
+  )
+}
+```
+
 * No longer required after **React 17** to import React from the react module in every file that uses JSX
 * Components and their files should use PascalCase(ex:UserProfile.js)
 
-
 ### Simple react Hello World example:
-
 
 > ex: **index.jsx**
 >
 > This is where we write up our markup(HTML) language in our JS file. React does the magic 🪄 of adding that to the root div in HTML file.
+>
+> ```
 >
 > ```
