@@ -66,12 +66,29 @@ const {name, setup, punchline} = comedian
 console.log(setup) <-- Will give you the Joke setup
 
 ```
+Here's an example within a component:
+**Jokes.jsx**
 
+```
+function Joke({setup, punchline}) {
+	return (
+		<>
+			<h2>{setup}</h2>
+			<p>{punchline}</p>
+		</>
+	)
+}
+
+export default Joke;
+```
+Now we don't need to use props in the code when we do this.
+
+
+### Simple react Hello World example:
 
 * No longer required after **React 17** to import React from the react module in every file that uses JSX
 * Components and their files should use PascalCase(ex:UserProfile.js)
 
-### Simple react Hello World example:
 
 > ex: **index.jsx**
 >
