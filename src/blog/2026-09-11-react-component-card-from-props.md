@@ -52,6 +52,21 @@ function App() {
   )
 }
 ```
+Props will now display Jokes on your page.
+You can also destructure props, for ex:
+```
+...
+const comedian = {
+    name: "Mr. Funnyguy",
+    setup: "The funiest joke setup",
+    punchline: "The funiest punchline"
+}
+
+const {name, setup, punchline} = comedian
+console.log(setup) <-- Will give you the Joke setup
+
+```
+
 
 * No longer required after **React 17** to import React from the react module in every file that uses JSX
 * Components and their files should use PascalCase(ex:UserProfile.js)
