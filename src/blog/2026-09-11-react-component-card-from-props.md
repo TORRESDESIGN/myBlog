@@ -82,6 +82,22 @@ function Joke({setup, punchline}) {
 export default Joke;
 ```
 Now we don't need to use props in the code when we do this.
+What about && logical operator(truthy) in React?
+Yes! Here's an example:
+```
+function Joke(props) {
+    
+    return(
+        <>
+            {props.setup && <h1>{props.setup}</h1>}
+            <p>{props.punchline}</p>
+        </>
+    )
+}
+
+export default Joke;
+```
+If the setup is empty, undefined, etc, it won't render that h1.
 
 
 ### Simple react Hello World example:
