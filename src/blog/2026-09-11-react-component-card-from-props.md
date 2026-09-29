@@ -48,11 +48,12 @@ function App() {
         setup="How do you organize a party on Mars?"
         punchline="You planet."
       />
-    </section>
+    </>
   )
 }
 ```
 Props will now display Jokes on your page.
+
 You can also destructure props, for ex:
 ```
 ...
@@ -98,6 +99,24 @@ function Joke(props) {
 export default Joke;
 ```
 If the setup is empty, undefined, etc, it won't render that h1.
+
+### Passing non-string props example:
+```
+function App() {
+  return(
+    <>
+      <img src={Logo} alt="react logo" className="logo" />
+      <h1>DAD JOKES</h1>
+      <Jokes 
+        setup={6}
+        punchline={7}
+        upvote={0}
+        funny={false}
+      />
+    </>
+  )
+}
+```
 
 ------------------------ old below -----------
 ### Simple react Hello World example:
