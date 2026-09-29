@@ -99,7 +99,7 @@ export default Joke;
 ```
 If the setup is empty, undefined, etc, it won't render that h1.
 
-
+------------------------ old below -----------
 ### Simple react Hello World example:
 
 * No longer required after **React 17** to import React from the react module in every file that uses JSX
