@@ -117,6 +117,15 @@ function App() {
   )
 }
 ```
+### image relative path for local/vite setup example:
+```
+import mrMan from "./images/mr-man.png"
+
+             <Contact
+                img={mrMan}
+            />
+```
+This is helpful when using vite, since vite will compile your project in final build.
 
 ------------------------ old below -----------
 ### Simple react Hello World example:
