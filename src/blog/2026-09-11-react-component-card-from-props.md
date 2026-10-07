@@ -34,6 +34,7 @@ export default Joke;
 
 Import component to App.jsx file
 **App.jsx**
+
 ```
 function App() {
   return(
@@ -52,9 +53,11 @@ function App() {
   )
 }
 ```
+
 Props will now display Jokes on your page.
 
 You can also destructure props, for ex:
+
 ```
 ...
 const comedian = {
@@ -65,8 +68,8 @@ const comedian = {
 
 const {name, setup, punchline} = comedian
 console.log(setup) <-- Will give you the Joke setup
-
 ```
+
 Here's an example within a component:
 **Jokes.jsx**
 
@@ -82,9 +85,11 @@ function Joke({setup, punchline}) {
 
 export default Joke;
 ```
+
 Now we don't need to use props in the code when we do this.
 What about && logical operator(truthy) in React?
 Yes! Here's an example:
+
 ```
 function Joke(props) {
     
@@ -98,9 +103,11 @@ function Joke(props) {
 
 export default Joke;
 ```
+
 If the setup is empty, undefined, etc, it won't render that h1.
 
 ### Passing non-string props example:
+
 ```
 function App() {
   return(
@@ -112,12 +119,15 @@ function App() {
         punchline={7}
         upvote={0}
         funny={false}
+        img={pic.jpg}
       />
     </>
   )
 }
 ```
+
 ### image relative path for local/vite setup example:
+
 ```
 import mrMan from "./images/mr-man.png"
 
@@ -125,14 +135,15 @@ import mrMan from "./images/mr-man.png"
                 img={mrMan}
             />
 ```
+
 This is helpful when using vite, since vite will compile your project in final build.
 
------------------------- old below -----------
+\------------------------ old below -----------
+
 ### Simple react Hello World example:
 
 * No longer required after **React 17** to import React from the react module in every file that uses JSX
 * Components and their files should use PascalCase(ex:UserProfile.js)
-
 
 > ex: **index.jsx**
 >
