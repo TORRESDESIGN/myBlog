@@ -119,7 +119,6 @@ function App() {
         punchline={7}
         upvote={0}
         funny={false}
-        img={pic.jpg}
       />
     </>
   )
