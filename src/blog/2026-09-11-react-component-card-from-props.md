@@ -137,6 +137,52 @@ import mrMan from "./images/mr-man.png"
 
 This is helpful when using vite, since vite will compile your project in final build.
 
+### Passing data to props example:
+**Card.jsx**
+```
+import Data from './data';
+
+function Card(props) {
+	return (
+		<div className="card">
+			<img className="card-profile" src={props.image}></img>
+			<div className="card-text">
+				<h4>{props.country}</h4>
+				<h2>{props.city}</h2>
+			</div>
+		</div>
+	)
+}
+
+export default Card;
+```
+props.image is setting a name to assign in your App.jsx file
+**App.jsx**
+
+```
+import './App.css'
+import Header from './Header.jsx';
+import Card from './Card.jsx';
+import Data from './data.js';
+
+function App() {
+//console.log(Data[1].country)
+  return (
+    <div>
+      <Header />
+      <Card 
+        image={Data[2].image} //data or "text"(hardcoded)
+        country={Data[2].country}
+        city={Data[2].city}
+      />
+    </div>
+  )
+}
+
+export default App
+```
+
+
 \------------------------ old below -----------
 
 ### Simple react Hello World example:
