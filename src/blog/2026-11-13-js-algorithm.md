@@ -8,4 +8,16 @@ tags:
 image: /images/bannerRed1600x618.png
 imageAlt: Red background that says JAVASCRIPT
 ---
-**How to get the first letter from an array:**
+**How to capitalize first letter in array.**
+```
+const names = ["alice", "bob", "charlie", "danielle"]
+
+const capitalized = names.map(x => {
+    const cap = x.charAt(0).toUpperCase()
+    const uncapped = x.slice(1)
+    return cap + uncapped;
+    
+})
+
+console.log(capitalized)
+```
