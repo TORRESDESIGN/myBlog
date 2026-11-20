@@ -181,6 +181,51 @@ function App() {
 
 export default App
 ```
+### Using js map to loop through data to components
+**App.jsx**
+```
+import Badjoke from "./Joke"
+import jokesData from "./jokesData"
+
+export default function App() {
+    
+    const jokeTag = jokesData.map((joke) => {
+        console.log(joke);
+        return (
+            <Joke 
+                setup={joke.setup}
+                punchline={joke.punchline}
+            />
+        )
+    })
+    return (
+        <main>
+            {jokeTag}
+        </main>
+    )
+}
+```
+***Badjoke.jsx***
+```
+export default function BadJoke(props) {
+    return (
+        <>
+            {props.setup && <p className="setup">Setup: {props.setup}</p>}
+            <p className="punchline">Punchline: {props.punchline}</p>
+            <hr />
+        </>
+    )
+}
+```
+***jokeData.js***
+```
+export default [
+    {
+        setup: "Why did Jim throw butter out the window?",
+        punchline: "To see the butterfly"
+    },etc
+]
+```
 
 
 \------------------------ old below -----------
