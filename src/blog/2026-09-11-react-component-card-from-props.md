@@ -181,6 +181,8 @@ function App() {
 
 export default App
 ```
+The better method would be to use a map function when using a lot of data.
+
 ### Using js map to loop through data to components
 **App.jsx**
 ```
