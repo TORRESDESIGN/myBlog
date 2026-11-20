@@ -207,7 +207,7 @@ export default function App() {
     )
 }
 ```
-***Badjoke.jsx***
+**Badjoke.jsx**
 ```
 export default function BadJoke(props) {
     return (
@@ -219,7 +219,7 @@ export default function BadJoke(props) {
     )
 }
 ```
-***jokeData.js***
+**jokeData.js**
 ```
 export default [
     {
